@@ -305,10 +305,14 @@ tuor:visited {
 .single_about_area:hover div i {
     color: #f39c12;
 }
-.about_phone img {} @media (min-width: 991px) and (max-width: 1200px) {
+.about_phone img {
+    width: 50%;
+    box-shadow: 0 0 3px grey;
+}
+ @media (min-width: 991px) and (max-width: 1200px) {
     .about_phone img {
         margin-top: 184px;
-        width: 80%;
+        width: 40%;
         margin-right: 20%
     }
 }
@@ -1073,4 +1077,16 @@ select:-webkit-autofill {
         transform: scale(1.0);
         -webkit-transform: scale(1.0);
     }
+}
+
+.orange-text{
+    color: #f39c12;
+}
+
+.orange-text:hover{
+    color: #f39c12;
+}
+
+p, h1, h2, h3, h4, h5, h6, body, a, button{
+    font-family: "Roboto" !important;
 }
