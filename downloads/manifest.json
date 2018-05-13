@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+ 
+    "name": "HDRezka checker",
+    "description": "Расширение для проверки наличия новых серий ваших сериалов на сайте hdrezka.ag",
+    "version": "1.0",
+ 
+    "browser_action": {
+        "default_icon": "logo.png",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "scripts": ["vendor/jquery-3.3.1.min.js", "app/js/config.js", "app/js/cache.js", "app/js/services.js", "app/js/parse.js","app/js/background.js"],
+        "persistent": false
+      },
+
+      "externally_connectable": {
+        "ids": ["*"],
+          "matches": ["https://materializecss.com/getting-started.html"]
+        },
+
+    "permissions": [
+        "activeTab",
+        "tabs",
+        "<all_urls>",
+        "debugger",
+        "notifications"
+    ]
+}
